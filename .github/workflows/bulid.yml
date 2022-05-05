@@ -28,7 +28,7 @@ jobs:
       #   run: pip install -r ./requirements.txt
       - name: 'Working'
         timeout-minutes: 360
-        run: docker run -it --rm  -v "$PWD":/usr/src/app --name my-running-app gindex/perl:latest
+        run: docker run -i --rm  -v "$PWD":/usr/src/app --name my-running-app gindex/perl:latest
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
