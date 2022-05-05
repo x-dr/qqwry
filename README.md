@@ -48,6 +48,7 @@ MaxMind DB 自家的 [数据库生成工具](https://github.com/maxmind/MaxMind-
 
 ### Linux (CentOS7)
 
+
 ```shell
 yum -y install perl perl-CPAN
 curl -L https://cpanmin.us | perl - App::cpanminus
