@@ -33,7 +33,7 @@ my $tree = MaxMind::DB::Writer::Tree->new(
         'zh-CN' => ($qqwry->db_version() // "") . " CZ88.NET",
     },
     map_key_type_callback    => sub {$types{ $_[0] }},
-    remove_reserved_networks => 1, #为 1 时删除私网网段内的IP记录，为 0 则保留
+    remove_reserved_networks => 0, #为 1 时删除私网网段内的IP记录，为 0 则保留
 );
 
 $qqwry->iterate(sub {
