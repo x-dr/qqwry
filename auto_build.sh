@@ -5,7 +5,7 @@
 
 docker run -id -v $PWD/outpath:/usr/src/app/outpath --name my-running-app gindex/perl:latest
 
-sleep 120
+sleep 80
 
 docker stop my-running-app
 

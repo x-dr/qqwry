@@ -11,5 +11,5 @@ RUN mkdir -p /usr/src/app \
 
 
 
-# CMD [ "perl", "./qqwry2mmdb.pl","qqwry.dat" ]
-ENTRYPOINT ["./entrypoint.sh"]
+CMD [ "perl", "./qqwry2mmdb.pl","qqwry.dat" ]
+# ENTRYPOINT ["./entrypoint.sh"]
